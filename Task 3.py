@@ -41,4 +41,5 @@ if __name__ == '__main__':
             best_cost = vehicle.money
             best_vehicle = vehicle
 print(f"Наиболее быстрая и экономичная поездка: {best_vehicle.name} - Время: {best_time} часов, Стоимость: {best_cost} рублей")
-
+with open("Транспор.txt", "a", encoding="utf-8") as FILE:
+    FILE.write(f"Наиболее быстрая и экономичная поездка: {best_vehicle.name} - Время: {best_time} часов, Стоимость: {best_cost} рублей\n")
